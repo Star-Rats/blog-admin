@@ -4,7 +4,7 @@ import router from './router'
 
 export const TOKEN_KEY = 'blog_admin_token'
 
-// 与后端 app/core/api_response.py 对齐的业务码
+// 与后端 app/core/error_codes.py 的 ErrorCode 对齐的业务码
 export const ApiCode = {
   SUCCESS: 20000,
   NO_LOGIN: 40001,
