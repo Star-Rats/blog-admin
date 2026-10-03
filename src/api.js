@@ -11,7 +11,7 @@ export const ApiCode = {
 }
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE || 'http://127.0.0.1:8000',
+  baseURL: import.meta.env.VITE_API_BASE ?? '', // 生产为空串走同域（nginx 网关反代 /api）；dev 由 .env.development 提供
   timeout: 30000,
 })
 
